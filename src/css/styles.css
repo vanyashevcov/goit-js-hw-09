@@ -6,7 +6,7 @@
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 .link {
@@ -80,6 +80,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: border 250ms ease-in-out;
 }
 
 .feedback-form label input:hover,
@@ -104,8 +105,9 @@ ul {
   border: none;
   cursor: pointer;
   margin-top: 8px;
+  transition: background-color 250ms ease-in-out;
 }
 
 .feedback-form button:hover {
-  background: #6c8cff;
+  background-color: #6c8cff;
 }
