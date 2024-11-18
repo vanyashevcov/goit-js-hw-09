@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #2e2f42;
 }
+
 ul {
   list-style: none;
 }
@@ -12,6 +13,7 @@ ul {
   font-size: 20px;
   padding: 20px;
 }
+
 .item-link {
   margin: 20px 0;
 }
@@ -20,27 +22,32 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 24px auto;
 }
+
 .gallery-item {
-  width: 360px;
+  width: calc((100% - 24px * 2) / 3);
 }
+
 .gallery-link {
   width: 100%;
 }
+
 .gallery-image {
-  width: 100%;
+  width: 360px;
+  height: 200px;
+  transition: transform 300ms ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.04);
 }
 
 .bg-color {
   background-color: #2e2f42ba;
 }
 
-.bg-color > .sl-navigation > .sl-prev,
-.bg-color > .sl-navigation > .sl-next,
+.bg-color>.sl-navigation>.sl-prev,
+.bg-color>.sl-navigation>.sl-next,
 .sl-wrapper .sl-counter,
 .sl-wrapper .sl-close {
   color: #fff;
@@ -53,6 +60,7 @@ ul {
   padding: 24px;
   margin: 0 auto;
 }
+
 .feedback-form label {
   display: flex;
   flex-direction: column;
@@ -61,6 +69,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+
 .feedback-form label input,
 .feedback-form label textarea {
   padding: 8px 16px;
@@ -72,13 +81,16 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+
 .feedback-form label input:hover,
 .feedback-form label textarea:hover {
   border: 1px solid #000;
 }
+
 .feedback-form label textarea {
   max-height: 80px;
 }
+
 .feedback-form button {
   border-radius: 8px;
   padding: 8px 16px;
@@ -93,6 +105,7 @@ ul {
   cursor: pointer;
   margin-top: 8px;
 }
+
 .feedback-form button:hover {
   background: #6c8cff;
 }
